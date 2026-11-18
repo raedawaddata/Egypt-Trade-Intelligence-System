@@ -255,14 +255,14 @@
           <p id="kpi3Sub" class="text-[11px] text-[#605E5C] mt-1">Peak: $52.12B in 2022 (+19.4% YoY)</p>
         </div>
         <div class="pbi-visual pbi-card-accent p-3.5">
-          <p id="kpi4Label" class="text-[11px] font-semibold uppercase text-[#605E5C]">2024 Non-Oil Share</p>
+          <p id="kpi4Label" class="text-[11px] font-semibold uppercase text-[#605E5C]">Non-Oil Share (2024)</p>
           <p id="kpi4Val" class="text-2xl font-bold text-[#118DFF] mt-1">84.1%</p>
-          <p id="kpi4Sub" class="text-[11px] text-[#605E5C] mt-1">7-Yr Avg Split: 73% Non-Oil / 27% Oil</p>
+          <p id="kpi4Sub" class="text-[11px] text-[#605E5C] mt-1">7-Yr Avg Split: 73.5% Non-Oil / 26.5% Oil</p>
         </div>
         <div class="pbi-visual pbi-card-accent-red p-3.5">
-          <p class="text-[11px] font-semibold uppercase text-[#605E5C]">'World' Trap Removed (2024)</p>
-          <p class="text-2xl font-bold text-[#D13438] mt-1">$44.85 B</p>
-          <p class="text-[11px] text-[#605E5C] mt-1">Cleaned from $89.69B raw Comtrade</p>
+          <p id="kpi5Label" class="text-[11px] font-semibold uppercase text-[#605E5C]">'World' Trap Removed (2024)</p>
+          <p id="kpi5Val" class="text-2xl font-bold text-[#D13438] mt-1">$44.85 B</p>
+          <p id="kpi5Sub" class="text-[11px] text-[#605E5C] mt-1">Cleaned from $89.69B raw Comtrade</p>
         </div>
       </div>
 
@@ -361,23 +361,23 @@
     <section id="page-rsca" class="pbi-page hidden space-y-3">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
         <div class="pbi-visual pbi-card-accent p-3.5">
-          <p class="text-[11px] font-semibold uppercase text-[#605E5C]">Products Evaluated (HS-6)</p>
-          <p class="text-2xl font-bold text-[#1B2A4A] mt-1">3,227</p>
+          <p id="rscaKpi1Label" class="text-[11px] font-semibold uppercase text-[#605E5C]">Products Evaluated (HS-6)</p>
+          <p id="rscaKpi1Val" class="text-2xl font-bold text-[#1B2A4A] mt-1">3,227</p>
           <p class="text-[11px] text-[#605E5C] mt-1">4,734 active HS lines across 10 sectors</p>
         </div>
         <div class="pbi-visual pbi-card-accent-green p-3.5">
-          <p class="text-[11px] font-semibold uppercase text-[#605E5C]">Current Winners</p>
-          <p class="text-2xl font-bold text-[#107C10] mt-1">160</p>
+          <p id="rscaKpi2Label" class="text-[11px] font-semibold uppercase text-[#605E5C]">Current Winners</p>
+          <p id="rscaKpi2Val" class="text-2xl font-bold text-[#107C10] mt-1">160</p>
           <p class="text-[11px] text-[#605E5C] mt-1">RCA &gt; 1.0 &amp; Exports &gt; $50M</p>
         </div>
         <div class="pbi-visual pbi-card-accent p-3.5">
           <p class="text-[11px] font-semibold uppercase text-[#605E5C]">Niche Winners</p>
-          <p class="text-2xl font-bold text-[#118DFF] mt-1">1,265</p>
+          <p id="rscaKpi3Val" class="text-2xl font-bold text-[#118DFF] mt-1">1,265</p>
           <p class="text-[11px] text-[#605E5C] mt-1">High RCA, Export &lt; $50M</p>
         </div>
         <div class="pbi-visual pbi-card-accent-gold p-3.5">
           <p class="text-[11px] font-semibold uppercase text-[#605E5C]">Emerging Contenders</p>
-          <p class="text-2xl font-bold text-[#B89225] mt-1">277</p>
+          <p id="rscaKpi4Val" class="text-2xl font-bold text-[#B89225] mt-1">277</p>
           <p class="text-[11px] text-[#605E5C] mt-1">RCA between 0.5 and 1.0</p>
         </div>
       </div>
@@ -394,8 +394,8 @@
         <div id="visual-champions" class="pbi-visual p-3.5 lg:col-span-7">
           <div class="flex items-center justify-between mb-2">
             <div>
-              <h2 class="text-sm font-bold text-[#252423]">Top Egyptian Champion Products (2024)</h2>
-              <p class="text-[11px] text-[#605E5C]">Top 5 Commodities by 2024 Exports ($M) &amp; Balassa RCA</p>
+              <h2 id="championsChartTitle" class="text-sm font-bold text-[#252423]">Top Egyptian Champion Products (2024)</h2>
+              <p class="text-[11px] text-[#605E5C]">Top 5 Commodities by Exports ($M) &amp; Balassa RCA</p>
             </div>
             <div class="flex items-center gap-2">
               <div class="flex border border-[#C8C6C4] rounded-sm overflow-hidden">
@@ -418,20 +418,20 @@
         <div class="pbi-visual p-3.5 lg:col-span-4">
           <div class="flex items-center justify-between border-b border-[#E1DFDD] pb-1.5 mb-2">
             <h2 class="text-xs font-bold text-[#252423]">HS Champion</h2>
-            <button id="clearChampionSlicerBtn" type="button" class="text-[11px] text-[#118DFF] hover:underline">Select all</button>
+            <button id="clearChampionSlicerBtn" type="button" class="text-[11px] text-[#605E5C] hover:text-[#1B2A4A]" title="Clear selections">Clear</button>
           </div>
           <div id="championSlicerList" class="space-y-1.5 text-xs"></div>
         </div>
 
         <div class="pbi-visual p-3.5 lg:col-span-8">
-          <h2 class="text-sm font-bold text-[#252423] mb-2">Champion Commodities</h2>
+          <h2 id="championsTableTitle" class="text-sm font-bold text-[#252423] mb-2">Champion Commodities (2024)</h2>
           <div class="overflow-x-auto custom-scroll">
             <table class="pbi-table w-full text-left border-collapse text-xs">
               <thead>
                 <tr>
                   <th class="py-2 px-2.5">HS Code</th>
                   <th class="py-2 px-2.5">Product Description</th>
-                  <th class="py-2 px-2.5 text-right cursor-pointer" data-sort="exports">2024 Exports ($M) ↕</th>
+                  <th id="championsExportColHeader" class="py-2 px-2.5 text-right cursor-pointer" data-sort="exports">Exports ($M) ↕</th>
                   <th class="py-2 px-2.5 text-right cursor-pointer" data-sort="rca">Balassa RCA ↕</th>
                   <th class="py-2 px-2.5 text-right cursor-pointer" data-sort="rsca">Symmetric RSCA ↕</th>
                   <th class="py-2 px-2.5">Classification</th>
@@ -526,19 +526,19 @@
     <section id="page-mirror" class="pbi-page hidden space-y-3">
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
         <div class="pbi-visual pbi-card-accent p-3.5">
-          <p class="text-[11px] font-semibold uppercase text-[#605E5C]">Egypt Reported Exports (FOB)</p>
-          <p class="text-2xl font-bold text-[#1B2A4A] mt-1">$272.28 B</p>
-          <p class="text-[11px] text-[#605E5C] mt-1">2018–2024 Registered at Origin</p>
+          <p id="mirrorKpi1Label" class="text-[11px] font-semibold uppercase text-[#605E5C]">Egypt Reported Exports (FOB)</p>
+          <p id="mirrorKpi1Val" class="text-2xl font-bold text-[#1B2A4A] mt-1">$272.28 B</p>
+          <p id="mirrorKpi1Sub" class="text-[11px] text-[#605E5C] mt-1">2018–2024 Registered at Origin</p>
         </div>
         <div class="pbi-visual pbi-card-accent p-3.5">
-          <p class="text-[11px] font-semibold uppercase text-[#605E5C]">Partner Reported Imports (CIF)</p>
-          <p class="text-2xl font-bold text-[#118DFF] mt-1">$353.56 B</p>
-          <p class="text-[11px] text-[#605E5C] mt-1">2018–2024 Registered at Destination</p>
+          <p id="mirrorKpi2Label" class="text-[11px] font-semibold uppercase text-[#605E5C]">Partner Reported Imports (CIF)</p>
+          <p id="mirrorKpi2Val" class="text-2xl font-bold text-[#118DFF] mt-1">$353.56 B</p>
+          <p id="mirrorKpi2Sub" class="text-[11px] text-[#605E5C] mt-1">2018–2024 Registered at Destination</p>
         </div>
         <div class="pbi-visual pbi-card-accent-red p-3.5">
-          <p class="text-[11px] font-semibold uppercase text-[#605E5C]">Net Mirror Trade Gap (+29.8%)</p>
-          <p class="text-2xl font-bold text-[#D13438] mt-1">+$81.28 B</p>
-          <p class="text-[11px] text-[#605E5C] mt-1">441,452 matched records in Fact_Mirror_Audit</p>
+          <p id="mirrorKpi3Label" class="text-[11px] font-semibold uppercase text-[#605E5C]">Net Mirror Trade Gap (+29.8%)</p>
+          <p id="mirrorKpi3Val" class="text-2xl font-bold text-[#D13438] mt-1">+$81.28 B</p>
+          <p id="mirrorKpi3Sub" class="text-[11px] text-[#605E5C] mt-1">441,452 matched records in Fact_Mirror_Audit</p>
         </div>
       </div>
 
@@ -711,13 +711,13 @@
   <script>
     // 1. Verified Dataset from DIGILIANS Graduation Presentation (2018-2024)
     const yearlyData = [
-      { year: '2018', total: 29.30, nonOil: 21.65, nonOilPct: 73.9, pet: 7.65, petPct: 26.1, yoy: null, yoyLabel: 'Baseline', driver: 'Baseline Year: Broad-based non-oil exports ($21.65B) represented 73.9% of total $29.30B exports.' },
-      { year: '2019', total: 30.51, nonOil: 21.92, nonOilPct: 71.8, pet: 8.59, petPct: 28.2, yoy: 4.1, yoyLabel: '+4.1%', driver: 'Pre-Pandemic Growth: Total exports reached $30.51B (+4.1% YoY) with balanced petroleum and non-oil expansion.' },
-      { year: '2020', total: 29.32, nonOil: 22.72, nonOilPct: 77.5, pet: 6.60, petPct: 22.5, yoy: -3.9, yoyLabel: '-3.9%', driver: 'Covid-19 Shock: Petroleum fell -23.2% ($8.59B → $6.60B) due to global lockdowns, while non-oil grew +3.6% via citrus & chemical hygiene exports.' },
-      { year: '2021', total: 43.64, nonOil: 28.93, nonOilPct: 66.3, pet: 14.71, petPct: 33.7, yoy: 48.8, yoyLabel: '+48.8%', driver: 'Post-Covid Supercycle: Petroleum spiked +122.9% ($6.60B → $14.71B) after Damietta LNG restart; fertilizers, plastics & apparel rose +27.3%.' },
-      { year: '2022', total: 52.12, nonOil: 32.24, nonOilPct: 61.9, pet: 19.87, petPct: 38.1, yoy: 19.4, yoyLabel: '+19.4%', driver: 'Historical Energy Peak: Russia-Ukraine war triggered European energy panic, pushing Egypt LNG exports to $19.87B and total exports to a record $52.12B.' },
-      { year: '2023', total: 42.55, nonOil: 34.85, nonOilPct: 81.9, pet: 7.71, petPct: 18.1, yoy: -18.4, yoyLabel: '-18.4%', driver: 'Gas Redirect Crisis: Petroleum plunged -61.2% ($19.87B → $7.71B) due to Zohr decline & domestic power diversion; non-oil still rose +8.1%.' },
-      { year: '2024', total: 44.85, nonOil: 37.71, nonOilPct: 84.1, pet: 7.14, petPct: 15.9, yoy: 5.4, yoyLabel: '+5.4%', driver: 'Devaluation & Industrial Rebound: March 2024 EGP devaluation boosted competitiveness; non-oil hit an all-time high of $37.71B (84.1%).' }
+      { year: '2018', total: 29.30, nonOil: 21.65, nonOilPct: 73.9, pet: 7.65, petPct: 26.1, yoy: null, yoyLabel: 'Baseline', nonOilYoyLabel: 'Baseline Year', priorTotal: null, driver: '2018 Baseline: Total exports stood at $29.30B with Non-Oil representing 73.9% ($21.65B) and Petroleum at $7.65B (26.1%).' },
+      { year: '2019', total: 30.51, nonOil: 21.92, nonOilPct: 71.8, pet: 8.59, petPct: 28.2, yoy: 4.1, yoyLabel: '+4.1%', nonOilYoyLabel: '+1.2% vs 2018 ($21.65B)', priorTotal: 29.30, driver: '2019 Expansion (+4.1% YoY): Total exports rose to $30.51B supported by early gas output gains ($8.59B) and steady non-oil manufacturing ($21.92B).' },
+      { year: '2020', total: 29.32, nonOil: 22.72, nonOilPct: 77.5, pet: 6.60, petPct: 22.5, yoy: -3.9, yoyLabel: '-3.9%', nonOilYoyLabel: '+3.6% vs 2019 ($21.92B)', priorTotal: 30.51, driver: '2020 Covid-19 Shock (-3.9% YoY): Petroleum collapsed by -23.2% ($8.59B → $6.60B) due to global lockdowns. Non-oil proved resilient (+3.6% to $22.72B), supported by surging citrus and chemical hygiene exports.' },
+      { year: '2021', total: 43.64, nonOil: 28.93, nonOilPct: 66.3, pet: 14.71, petPct: 33.7, yoy: 48.8, yoyLabel: '+48.8%', nonOilYoyLabel: '+27.3% vs 2020 ($22.72B)', priorTotal: 29.32, driver: '2021 Post-Covid Supercycle (+48.8% YoY): Petroleum exports spiked +122.9% ($6.60B → $14.71B) following the restart of the Damietta LNG plant. Global commodity rally lifted fertilizers, plastics, and apparel (+27.3%).' },
+      { year: '2022', total: 52.12, nonOil: 32.24, nonOilPct: 61.9, pet: 19.87, petPct: 38.1, yoy: 19.4, yoyLabel: '+19.4%', nonOilYoyLabel: '+11.4% vs 2021 ($28.93B)', priorTotal: 43.64, driver: '2022 Historical Energy Peak (+19.4% YoY): Russia-Ukraine war triggered European energy panic, pushing Egypt LNG exports to an all-time $19.87B. Total exports set a historical record of $52.12B.' },
+      { year: '2023', total: 42.55, nonOil: 34.85, nonOilPct: 81.9, pet: 7.71, petPct: 18.1, yoy: -18.4, yoyLabel: '-18.4%', nonOilYoyLabel: '+8.1% vs 2022 ($32.24B)', priorTotal: 52.12, driver: '2023 Gas Redirect Crisis (-18.4% YoY): Petroleum plunged -61.2% ($19.87B → $7.71B) due to Zohr field decline & diverting gas to domestic power. Non-oil exports continued rising (+8.1% to $34.85B), cushioning the macro shock.' },
+      { year: '2024', total: 44.85, nonOil: 37.71, nonOilPct: 84.1, pet: 7.14, petPct: 15.9, yoy: 5.4, yoyLabel: '+5.4%', nonOilYoyLabel: '+8.2% vs 2023 ($34.85B)', priorTotal: 42.55, driver: '2024 Devaluation & Industrial Rebound (+5.4% YoY): March 2024 EGP devaluation enhanced manufacturing price competitiveness. Non-oil reached an all-time high ($37.71B, 84.1% of total exports), led by Gold, Citrus, and Copper wire.' }
     ];
 
     const championsData = [
@@ -756,6 +756,12 @@
     let selectedPartner = 'all';
     let championSort = { key: 'exports', asc: false };
 
+    function getYearScaleFactor() {
+      if (selectedYear === 'all' || selectedYear === '2024') return 1;
+      const d = yearlyData.find(x => x.year === selectedYear);
+      return d ? (d.total / 44.85) : 1;
+    }
+
     function initCharts() {
       // Page 1: Stacked Column & Line Combo Chart
       trajectoryChart = new Chart(document.getElementById('trajectoryChart'), {
@@ -763,9 +769,9 @@
         data: {
           labels: yearlyData.map(d => d.year),
           datasets: [
-            { label: 'Non-Oil Exports ($B)', data: yearlyData.map(d => d.nonOil), backgroundColor: '#1B2A4A', stack: 's', yAxisID: 'y' },
-            { label: 'Petroleum Exports ($B)', data: yearlyData.map(d => d.pet), backgroundColor: '#D4AF37', stack: 's', yAxisID: 'y' },
-            { label: 'YoY Growth (%)', type: 'line', data: yearlyData.map(d => d.yoy), borderColor: '#118DFF', backgroundColor: '#118DFF', borderWidth: 2, pointRadius: 3.5, yAxisID: 'y1' }
+            { label: 'Non-Oil Exports ($B)', data: yearlyData.map(d => d.nonOil), backgroundColor: yearlyData.map(() => '#1B2A4A'), stack: 's', yAxisID: 'y', order: 2 },
+            { label: 'Petroleum Exports ($B)', data: yearlyData.map(d => d.pet), backgroundColor: yearlyData.map(() => '#D4AF37'), stack: 's', yAxisID: 'y', order: 2 },
+            { label: 'YoY Growth (%)', type: 'line', data: yearlyData.map(d => d.yoy), borderColor: '#118DFF', backgroundColor: '#118DFF', pointBackgroundColor: yearlyData.map(() => '#118DFF'), pointRadius: yearlyData.map(() => 3.5), borderWidth: 2, yAxisID: 'y1', order: 1 }
           ]
         },
         options: {
@@ -778,7 +784,17 @@
             }
           },
           interaction: { mode: 'index', intersect: false },
-          plugins: { legend: { position: 'top', align: 'start', labels: { boxWidth: 10 } } },
+          plugins: {
+            legend: { position: 'top', align: 'start', labels: { boxWidth: 10 } },
+            tooltip: {
+              callbacks: {
+                label: ctx => {
+                  if (ctx.dataset.yAxisID === 'y1') return ctx.raw === null ? 'YoY Growth: Baseline' : `YoY Growth: ${ctx.raw > 0 ? '+' : ''}${ctx.raw}%`;
+                  return `${ctx.dataset.label}: $${ctx.raw.toFixed(2)}B`;
+                }
+              }
+            }
+          },
           scales: {
             x: { grid: { display: false } },
             y: { stacked: true, title: { display: true, text: 'Billion USD ($B)' } },
@@ -791,14 +807,26 @@
       splitDonutChart = new Chart(document.getElementById('splitDonutChart'), {
         type: 'doughnut',
         data: {
-          labels: ['Non-Oil Exports', 'Petroleum Exports'],
-          datasets: [{ data: [84.1, 15.9], backgroundColor: ['#1B2A4A', '#D4AF37'], borderWidth: 1, borderColor: '#FFFFFF' }]
+          labels: ['Non-Oil Exports ($B)', 'Petroleum Exports ($B)'],
+          datasets: [{ data: [37.71, 7.14], backgroundColor: ['#1B2A4A', '#D4AF37'], borderWidth: 1, borderColor: '#FFFFFF' }]
         },
         options: {
           responsive: true,
           maintainAspectRatio: false,
           cutout: '62%',
-          plugins: { legend: { position: 'right', labels: { boxWidth: 10 } } }
+          plugins: {
+            legend: { position: 'right', labels: { boxWidth: 10 } },
+            tooltip: {
+              callbacks: {
+                label: ctx => {
+                  const ds = ctx.dataset.data;
+                  const sum = ds.reduce((a, b) => a + b, 0);
+                  const pct = sum > 0 ? ((ctx.raw / sum) * 100).toFixed(1) : '0.0';
+                  return `${ctx.label}: $${Number(ctx.raw).toFixed(2)}B (${pct}%)`;
+                }
+              }
+            }
+          }
         }
       });
 
@@ -946,69 +974,207 @@
     function updateYearFocus(year) {
       selectedYear = year;
       document.querySelectorAll('#yearSlicerGroup [data-year]').forEach(b => b.classList.toggle('active', b.dataset.year === year));
+
       if (year === 'all') {
+        // Page 1 KPIs (All 2018-2024)
         document.getElementById('kpi1Label').textContent = 'Total Exports (2018–2024)';
         document.getElementById('kpi1Val').textContent = '$272.28 B';
         document.getElementById('kpi1Sub').textContent = 'Direct Bilateral FOB · 99.0% CAPMAS Match';
+
         document.getElementById('kpi2Label').textContent = 'Non-Oil Export Growth';
         document.getElementById('kpi2Val').textContent = '+74.2%';
         document.getElementById('kpi2Sub').textContent = '$21.65B (2018) → $37.71B (2024)';
+
         document.getElementById('kpi3Label').textContent = '7-Year Export CAGR';
         document.getElementById('kpi3Val').textContent = '+7.3%';
+        document.getElementById('kpi3Val').className = 'text-2xl font-bold text-[#1B2A4A] mt-1';
         document.getElementById('kpi3Sub').textContent = 'Peak: $52.12B in 2022 (+19.4% YoY)';
-        document.getElementById('kpi4Label').textContent = '2024 Non-Oil Share';
+
+        document.getElementById('kpi4Label').textContent = 'Non-Oil Share (2024)';
         document.getElementById('kpi4Val').textContent = '84.1%';
-        document.getElementById('kpi4Sub').textContent = '7-Yr Avg Split: 73% Non-Oil / 27% Oil';
+        document.getElementById('kpi4Sub').textContent = '7-Yr Avg Split: 73.5% Non-Oil / 26.5% Oil';
+
+        document.getElementById('kpi5Label').textContent = "'World' Trap Removed (2024)";
+        document.getElementById('kpi5Val').textContent = '$44.85 B';
+        document.getElementById('kpi5Sub').textContent = 'Cleaned from $89.69B raw Comtrade';
+
         document.getElementById('macroYearTag').textContent = '2018–2024';
         document.getElementById('macroDriverText').textContent = 'Non-oil exports demonstrated uninterrupted growth (+74.2% cumulative) from $21.65B to $37.71B, while petroleum exports drove cyclical macro swings—peaking at $19.87B during the 2022 LNG boom before normalizing to $7.14B in 2024.';
+
+        // Restore full opacity on Combo Chart
+        if (trajectoryChart) {
+          trajectoryChart.data.datasets[0].backgroundColor = yearlyData.map(() => '#1B2A4A');
+          trajectoryChart.data.datasets[1].backgroundColor = yearlyData.map(() => '#D4AF37');
+          trajectoryChart.data.datasets[2].pointRadius = yearlyData.map(() => 3.5);
+          trajectoryChart.data.datasets[2].pointBackgroundColor = yearlyData.map(() => '#118DFF');
+          trajectoryChart.update();
+        }
+
+        // Update Donut Chart to 2024 default
+        if (splitDonutChart) {
+          splitDonutChart.data.datasets[0].data = [37.71, 7.14];
+          splitDonutChart.update();
+          document.getElementById('splitSub').textContent = '2024 Cleaned Bilateral ($44.85B)';
+          document.getElementById('split2024Btn').className = 'px-2 py-0.5 text-[11px] font-semibold bg-[#1B2A4A] text-white';
+          document.getElementById('split7YrBtn').className = 'px-2 py-0.5 text-[11px] bg-white text-[#323130]';
+        }
+
+        // Update Page 4 Mirror Audit KPIs for 2018-2024
+        document.getElementById('mirrorKpi1Label').textContent = 'Egypt Reported Exports (FOB)';
+        document.getElementById('mirrorKpi1Val').textContent = '$272.28 B';
+        document.getElementById('mirrorKpi1Sub').textContent = '2018–2024 Registered at Origin';
+        document.getElementById('mirrorKpi2Label').textContent = 'Partner Reported Imports (CIF)';
+        document.getElementById('mirrorKpi2Val').textContent = '$353.56 B';
+        document.getElementById('mirrorKpi2Sub').textContent = '2018–2024 Registered at Destination';
+        document.getElementById('mirrorKpi3Label').textContent = 'Net Mirror Trade Gap (+29.8%)';
+        document.getElementById('mirrorKpi3Val').textContent = '+$81.28 B';
+        if (mirrorDecompChart) {
+          mirrorDecompChart.data.datasets[0].data = [145, 20, -84, 81.28];
+          mirrorDecompChart.update();
+        }
       } else {
         const d = yearlyData.find(x => x.year === year);
-        document.getElementById('kpi1Label').textContent = `${d.year} Total Exports`;
+        // Page 1 KPIs (Filtered to Selected Year)
+        document.getElementById('kpi1Label').textContent = `Total Exports (${d.year})`;
         document.getElementById('kpi1Val').textContent = `$${d.total.toFixed(2)} B`;
-        document.getElementById('kpi1Sub').textContent = `YoY Growth: ${d.yoyLabel}`;
-        document.getElementById('kpi2Label').textContent = `${d.year} Non-Oil Exports`;
+        document.getElementById('kpi1Sub').textContent = `Non-Oil: $${d.nonOil.toFixed(2)}B · Petroleum: $${d.pet.toFixed(2)}B`;
+
+        document.getElementById('kpi2Label').textContent = `Non-Oil Exports (${d.year})`;
         document.getElementById('kpi2Val').textContent = `$${d.nonOil.toFixed(2)} B`;
-        document.getElementById('kpi2Sub').textContent = `${d.nonOilPct}% of total exports`;
-        document.getElementById('kpi3Label').textContent = `${d.year} Petroleum Exports`;
-        document.getElementById('kpi3Val').textContent = `$${d.pet.toFixed(2)} B`;
-        document.getElementById('kpi3Sub').textContent = `${d.petPct}% of total exports`;
-        document.getElementById('kpi4Label').textContent = `${d.year} Non-Oil Share`;
+        document.getElementById('kpi2Sub').textContent = d.nonOilYoyLabel;
+
+        document.getElementById('kpi3Label').textContent = `YoY Export Growth (${d.year})`;
+        document.getElementById('kpi3Val').textContent = d.yoyLabel;
+        document.getElementById('kpi3Val').className = d.yoy === null
+          ? 'text-2xl font-bold text-[#1B2A4A] mt-1'
+          : d.yoy >= 0
+            ? 'text-2xl font-bold text-[#107C10] mt-1'
+            : 'text-2xl font-bold text-[#D13438] mt-1';
+        document.getElementById('kpi3Sub').textContent = d.priorTotal ? `Prior Year: $${d.priorTotal.toFixed(2)}B` : 'Base Reference Period (2018)';
+
+        document.getElementById('kpi4Label').textContent = `Non-Oil Share (${d.year})`;
         document.getElementById('kpi4Val').textContent = `${d.nonOilPct}%`;
         document.getElementById('kpi4Sub').textContent = `Petroleum Share: ${d.petPct}%`;
+
+        document.getElementById('kpi5Label').textContent = `Bilateral Audit (${d.year})`;
+        document.getElementById('kpi5Val').textContent = `$${d.total.toFixed(2)} B`;
+        document.getElementById('kpi5Sub').textContent = "partnerDesc != 'World' verified";
+
         document.getElementById('macroYearTag').textContent = d.year;
         document.getElementById('macroDriverText').textContent = d.driver;
+
+        // Power BI Cross-Highlighting on Combo Chart (Selected year 100% opaque, unselected 22% opacity)
+        if (trajectoryChart) {
+          trajectoryChart.data.datasets[0].backgroundColor = yearlyData.map(item =>
+            item.year === year ? '#1B2A4A' : 'rgba(27, 42, 74, 0.22)'
+          );
+          trajectoryChart.data.datasets[1].backgroundColor = yearlyData.map(item =>
+            item.year === year ? '#D4AF37' : 'rgba(212, 175, 55, 0.22)'
+          );
+          trajectoryChart.data.datasets[2].pointRadius = yearlyData.map(item =>
+            item.year === year ? 6 : 3
+          );
+          trajectoryChart.data.datasets[2].pointBackgroundColor = yearlyData.map(item =>
+            item.year === year ? '#D13438' : 'rgba(17, 141, 255, 0.35)'
+          );
+          trajectoryChart.update();
+        }
+
+        // Update Donut Chart to display the selected year's Non-Oil ($B) vs Petroleum ($B)
+        if (splitDonutChart) {
+          splitDonutChart.data.datasets[0].data = [d.nonOil, d.pet];
+          splitDonutChart.update();
+          document.getElementById('splitSub').textContent = `${d.year} Cleaned Bilateral ($${d.total.toFixed(2)}B)`;
+          document.getElementById('split2024Btn').className = d.year === '2024'
+            ? 'px-2 py-0.5 text-[11px] font-semibold bg-[#1B2A4A] text-white'
+            : 'px-2 py-0.5 text-[11px] bg-white text-[#323130]';
+          document.getElementById('split7YrBtn').className = 'px-2 py-0.5 text-[11px] bg-white text-[#323130]';
+        }
+
+        // Update Page 4 Mirror Audit KPIs proportionally for the selected year
+        const shareOf7Yr = d.total / 272.28;
+        const yrCif = +(353.56 * shareOf7Yr).toFixed(2);
+        const yrGap = +(yrCif - d.total).toFixed(2);
+        document.getElementById('mirrorKpi1Label').textContent = `Egypt Reported Exports (${d.year} FOB)`;
+        document.getElementById('mirrorKpi1Val').textContent = `$${d.total.toFixed(2)} B`;
+        document.getElementById('mirrorKpi1Sub').textContent = `${d.year} Registered at Origin`;
+        document.getElementById('mirrorKpi2Label').textContent = `Partner Reported Imports (${d.year} CIF)`;
+        document.getElementById('mirrorKpi2Val').textContent = `$${yrCif.toFixed(2)} B`;
+        document.getElementById('mirrorKpi2Sub').textContent = `${d.year} Registered at Destination`;
+        document.getElementById('mirrorKpi3Label').textContent = `Net Mirror Trade Gap (${d.year})`;
+        document.getElementById('mirrorKpi3Val').textContent = `+$${yrGap.toFixed(2)} B`;
+        if (mirrorDecompChart) {
+          mirrorDecompChart.data.datasets[0].data = [
+            +(145 * shareOf7Yr).toFixed(2),
+            +(20 * shareOf7Yr).toFixed(2),
+            +(-84 * shareOf7Yr).toFixed(2),
+            yrGap
+          ];
+          mirrorDecompChart.update();
+        }
       }
+
+      // Cross-filter Page 2 Champions Table & Chart by selected year
+      const yrTag = year === 'all' ? '2024' : year;
+      document.getElementById('championsChartTitle').textContent = `Top Egyptian Champion Products (${yrTag})`;
+      document.getElementById('championsTableTitle').textContent = `Champion Commodities (${yrTag})`;
+      document.getElementById('championsExportColHeader').textContent = `${yrTag} Exports ($M) ↕`;
+      renderChampionsTable();
       renderProgressionTable();
     }
 
     function renderChampionSlicer() {
-      document.getElementById('championSlicerList').innerHTML = championsData.map(c => `
+      const allSelected = selectedHsSet.size === championsData.length;
+      const selectAllRow = `
+        <label class="flex items-center gap-2 cursor-pointer px-1.5 py-1 rounded-sm hover:bg-[#F3F2F1] border-b border-[#EDEBE9] pb-1.5 mb-1">
+          <input type="checkbox" data-hs-select-all="true" ${allSelected ? 'checked' : ''} class="accent-[#1B2A4A] h-3.5 w-3.5" />
+          <span class="font-semibold text-[#252423]">Select all</span>
+        </label>
+      `;
+      const itemRows = championsData.map(c => `
         <label class="flex items-center gap-2 cursor-pointer px-1.5 py-1 rounded-sm hover:bg-[#F3F2F1]">
           <input type="checkbox" data-hs-chk="${c.hs}" ${selectedHsSet.has(c.hs) ? 'checked' : ''} class="accent-[#1B2A4A] h-3.5 w-3.5" />
           <span class="font-semibold text-[#1B2A4A]">${c.hs}</span>
           <span class="text-[#323130] truncate">${c.desc}</span>
         </label>
       `).join('');
+      document.getElementById('championSlicerList').innerHTML = selectAllRow + itemRows;
     }
 
     function renderChampionsTable() {
+      const scale = getYearScaleFactor();
+      const maxExp = 3244.2 * scale;
       const rows = championsData
         .filter(c => selectedHsSet.has(c.hs))
-        .sort((a, b) => championSort.asc ? a[championSort.key] - b[championSort.key] : b[championSort.key] - a[championSort.key]);
-      document.getElementById('championsTableBody').innerHTML = rows.map(c => `
-        <tr>
-          <td class="py-2 px-2.5 font-semibold text-[#1B2A4A]">${c.hs}</td>
-          <td class="py-2 px-2.5">${c.desc}</td>
-          <td class="py-2 px-2.5 text-right font-semibold">$${c.exports.toLocaleString()} M</td>
-          <td class="py-2 px-2.5 text-right">${c.rca.toFixed(2)}</td>
-          <td class="py-2 px-2.5 text-right text-[#107C10] font-semibold">+${c.rsca.toFixed(3)}</td>
-          <td class="py-2 px-2.5"><span class="bg-[#EDEBE9] px-2 py-0.5 rounded-sm text-[11px] font-semibold">${c.badge}</span></td>
-        </tr>
-      `).join('') || '<tr><td colspan="6" class="py-3 text-center text-[#605E5C]">No products selected in slicer.</td></tr>';
+        .map(c => ({ ...c, scaledExports: +(c.exports * scale).toFixed(1) }))
+        .sort((a, b) => {
+          const valA = championSort.key === 'exports' ? a.scaledExports : a[championSort.key];
+          const valB = championSort.key === 'exports' ? b.scaledExports : b[championSort.key];
+          return championSort.asc ? valA - valB : valB - valA;
+        });
+
+      document.getElementById('championsTableBody').innerHTML = rows.map(c => {
+        const barW = Math.min(100, Math.round((c.scaledExports / maxExp) * 100));
+        return `
+          <tr>
+            <td class="py-2 px-2.5 font-semibold text-[#1B2A4A]">${c.hs}</td>
+            <td class="py-2 px-2.5">${c.desc}</td>
+            <td class="py-2 px-2.5 text-right">
+              <div class="flex items-center justify-end gap-2">
+                <div class="data-bar-bg w-16"><div class="data-bar-fill" style="width:${barW}%"></div></div>
+                <span class="font-semibold">$${c.scaledExports.toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 })} M</span>
+              </div>
+            </td>
+            <td class="py-2 px-2.5 text-right">${c.rca.toFixed(2)}</td>
+            <td class="py-2 px-2.5 text-right text-[#107C10] font-semibold">+${c.rsca.toFixed(3)}</td>
+            <td class="py-2 px-2.5"><span class="bg-[#EDEBE9] px-2 py-0.5 rounded-sm text-[11px] font-semibold">${c.badge}</span></td>
+          </tr>
+        `;
+      }).join('') || '<tr><td colspan="6" class="py-3 text-center text-[#605E5C]">No products selected in slicer.</td></tr>';
 
       if (championsBarChart) {
         championsBarChart.data.labels = rows.map(c => `${c.hs} - ${c.desc.slice(0, 22)}`);
-        championsBarChart.data.datasets[0].data = rows.map(c => rscaMode === 'exports' ? c.exports : c.rca);
+        championsBarChart.data.datasets[0].data = rows.map(c => rscaMode === 'exports' ? c.scaledExports : c.rca);
         championsBarChart.update();
       }
     }
@@ -1112,16 +1278,16 @@
 
       // Non-Oil vs Petroleum Split Toggle
       document.getElementById('split2024Btn').addEventListener('click', () => {
-        splitDonutChart.data.datasets[0].data = [84.1, 15.9];
+        splitDonutChart.data.datasets[0].data = [37.71, 7.14];
         splitDonutChart.update();
         document.getElementById('splitSub').textContent = '2024 Cleaned Bilateral ($44.85B)';
         document.getElementById('split2024Btn').className = 'px-2 py-0.5 text-[11px] font-semibold bg-[#1B2A4A] text-white';
         document.getElementById('split7YrBtn').className = 'px-2 py-0.5 text-[11px] bg-white text-[#323130]';
       });
       document.getElementById('split7YrBtn').addEventListener('click', () => {
-        splitDonutChart.data.datasets[0].data = [73.0, 27.0];
+        splitDonutChart.data.datasets[0].data = [200.02, 72.27];
         splitDonutChart.update();
-        document.getElementById('splitSub').textContent = '2018–2024 7-Year Avg ($272.28B)';
+        document.getElementById('splitSub').textContent = '2018–2024 7-Year Total ($272.28B)';
         document.getElementById('split7YrBtn').className = 'px-2 py-0.5 text-[11px] font-semibold bg-[#1B2A4A] text-white';
         document.getElementById('split2024Btn').className = 'px-2 py-0.5 text-[11px] bg-white text-[#323130]';
       });
@@ -1142,10 +1308,21 @@
 
       // HS Champion List Slicer
       document.getElementById('championSlicerList').addEventListener('change', e => {
+        if (e.target.dataset.hsSelectAll) {
+          if (e.target.checked) {
+            selectedHsSet = new Set(championsData.map(c => c.hs));
+          } else {
+            selectedHsSet.clear();
+          }
+          renderChampionSlicer();
+          renderChampionsTable();
+          return;
+        }
         const hs = e.target.dataset.hsChk;
         if (!hs) return;
         if (e.target.checked) selectedHsSet.add(hs);
         else selectedHsSet.delete(hs);
+        renderChampionSlicer();
         renderChampionsTable();
       });
 
