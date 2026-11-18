@@ -14,19 +14,19 @@ This enterprise analytics solution transforms raw UN Comtrade bilateral trade re
 ## 📊 Executive Dashboard Showcase
 
 ### 1. Executive Overview & Macroeconomic Trajectory
-![Executive Overview](page1.png)
+![Executive Overview](Executive%20Overview.png)
 
 ### 2. Strategic Competitiveness & Balassa RSCA Quadrants
-![Competitiveness & RSCA](page2.png)
+![Competitiveness & RSCA](Competitiveness%20%26%20RSCA.png)
 
 ### 3. Product-Market Opportunity Scoring Engine
-![Opportunity Scoring](page3.png)
+![Opportunity Scoring](Opportunity%20Scoring.png)
 
 ### 4. Forensic Mirror Trade & Customs Risk Audit (What-If Simulator)
-![Mirror Trade Audit](page4.png)
+![Mirror Trade Audit](Mirror%20Trade%20Audit.png)
 
 ### 5. Regional Peer Benchmarking (Egypt vs. Morocco, Saudi Arabia & Vietnam)
-![Regional Benchmark](page5.png)
+![Regional Benchmark](Regional%20Benchmark.png)
 
 ---
 
@@ -54,7 +54,7 @@ This enterprise analytics solution transforms raw UN Comtrade bilateral trade re
 ---
 
 ## 👥 Project Team
+* **Raed Awad**
 * **Ehab Shahat**
 * **Mohammed Fuaad**
 * **Mahmoud Ezzat**
-* **Raed Awad**
